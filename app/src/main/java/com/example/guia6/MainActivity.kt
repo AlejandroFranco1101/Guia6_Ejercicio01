@@ -43,4 +43,8 @@ class MainActivity : AppCompatActivity() {
     fun onClickGrid(view: View?) {
         startActivity(Intent(this, GridLayout::class.java))
     }
+
+    fun onClickRegistro(view: View?) {
+        startActivity(Intent(this, RegistroActivity::class.java))
+    }
 }

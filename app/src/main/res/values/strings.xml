@@ -29,4 +29,20 @@
     <string name="table_layout">Table Layout</string>
     <string name="constraint_layout">Constraint Layout</string>
     <string name="grid_layout">Grid Layout</string>
+    <string name="registro">Registro de usuario</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="completa_datos">Completa tus datos para registrarte</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo_electronico">Correo</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresa_nombre">Ingresa tu nombre</string>
+    <string name="ingresa_apellido">Ingresa tu apellido</string>
+    <string name="ingresa_correo">correo@ejemplo.com</string>
+    <string name="ingresa_contrasena">Crea una contraseña</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="aceptar_terminos">Acepto los términos y condiciones</string>
+    <string name="registrarse">Enviar registro</string>
 </resources>

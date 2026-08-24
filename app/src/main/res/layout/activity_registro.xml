@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".RegistroActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/registro_fondo"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/registro_superficie"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tituloRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/crear_cuenta"
+                android:textColor="@color/registro_primario"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subtituloRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/completa_datos"
+                android:textColor="@color/registro_texto_secundario"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tituloRegistro" />
+
+            <LinearLayout
+                android:id="@+id/contenedorFormulario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subtituloRegistro">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/RegistroEtiqueta"
+                            android:text="@string/nombre" />
+
+                        <EditText
+                            android:id="@+id/inputNombreRegistro"
+                            style="@style/RegistroCampo"
+                            android:autofillHints="personGivenName"
+                            android:hint="@string/ingresa_nombre"
+                            android:inputType="textPersonName" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/RegistroEtiqueta"
+                            android:text="@string/apellido" />
+
+                        <EditText
+                            android:id="@+id/inputApellidoRegistro"
+                            style="@style/RegistroCampo"
+                            android:autofillHints="personFamilyName"
+                            android:hint="@string/ingresa_apellido"
+                            android:inputType="textPersonName" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/RegistroEtiqueta"
+                            android:text="@string/correo_electronico" />
+
+                        <EditText
+                            android:id="@+id/inputCorreoRegistro"
+                            style="@style/RegistroCampo"
+                            android:autofillHints="emailAddress"
+                            android:hint="@string/ingresa_correo"
+                            android:inputType="textEmailAddress" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/RegistroEtiqueta"
+                            android:text="@string/contrasena" />
+
+                        <EditText
+                            android:id="@+id/inputContrasenaRegistro"
+                            style="@style/RegistroCampo"
+                            android:autofillHints="newPassword"
+                            android:hint="@string/ingresa_contrasena"
+                            android:inputType="textPassword" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/genero"
+                    android:textColor="@color/registro_texto"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/grupoGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/generoMasculino"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:text="@string/masculino"
+                        android:textColor="@color/registro_texto" />
+
+                    <RadioButton
+                        android:id="@+id/generoFemenino"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:text="@string/femenino"
+                        android:textColor="@color/registro_texto" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/aceptarTerminos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/aceptar_terminos"
+                    android:textColor="@color/registro_texto" />
+
+                <Button
+                    android:id="@+id/botonRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/registro_primario"
+                    android:minHeight="48dp"
+                    android:text="@string/registrarse"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

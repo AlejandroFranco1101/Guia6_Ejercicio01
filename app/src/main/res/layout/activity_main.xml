@@ -68,4 +68,14 @@
         android:text="@string/grid_layout"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:onClick="onClickRegistro"
+        android:text="@string/registro"
+        android:textAllCaps="false" />
+
 </LinearLayout>
