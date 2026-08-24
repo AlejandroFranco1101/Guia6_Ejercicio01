@@ -7,4 +7,20 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="numero_0">0</string>
+    <string name="numero_1">1</string>
+    <string name="numero_2">2</string>
+    <string name="numero_3">3</string>
+    <string name="numero_4">4</string>
+    <string name="numero_5">5</string>
+    <string name="numero_6">6</string>
+    <string name="numero_7">7</string>
+    <string name="numero_8">8</string>
+    <string name="numero_9">9</string>
+    <string name="signo_dividir">÷</string>
+    <string name="signo_multiplicar">×</string>
+    <string name="signo_menos">-</string>
+    <string name="punto">.</string>
+    <string name="signo_igual">=</string>
+    <string name="signo_mas">+</string>
 </resources>
