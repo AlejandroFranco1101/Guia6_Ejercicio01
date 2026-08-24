@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Guia6">
         <activity
+            android:name=".RelativeLayout"
+            android:exported="false" />
+        <activity
             android:name=".LinearLayout"
             android:exported="false" />
         <activity
