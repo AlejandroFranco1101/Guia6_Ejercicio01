@@ -17,5 +17,12 @@ class FrameLayout : AppCompatActivity() {
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<android.view.View>(R.id.btnSaltar).setOnClickListener {
+            finish()
+        }
+        findViewById<android.view.View>(R.id.btnSalir).setOnClickListener {
+            finish()
+        }
     }
 }

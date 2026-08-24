@@ -17,5 +17,9 @@ class RelativeLayout : AppCompatActivity() {
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<android.view.View>(R.id.btnSalir).setOnClickListener {
+            finish()
+        }
     }
 }

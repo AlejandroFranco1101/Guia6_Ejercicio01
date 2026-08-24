@@ -45,4 +45,9 @@
     <string name="femenino">Femenino</string>
     <string name="aceptar_terminos">Acepto los términos y condiciones</string>
     <string name="registrarse">Enviar registro</string>
+    <string name="campo_requerido">Campo requerido</string>
+    <string name="sesion_iniciada">Sesión iniciada correctamente</string>
+    <string name="selecciona_genero">Selecciona un género</string>
+    <string name="acepta_terminos_aviso">Debes aceptar los términos y condiciones</string>
+    <string name="registro_exitoso">Registro enviado correctamente</string>
 </resources>
