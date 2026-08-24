@@ -8,26 +8,35 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp">
 
         <EditText
             android:id="@+id/input_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:ems="10"
-            android:hint="Nombres"
+            android:autofillHints="personName"
+            android:hint="@string/nombres"
+            android:textColor="@android:color/black"
+            android:textColorHint="#616161"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/input_apellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_below="@+id/input_nombre"
             android:layout_alignParentStart="true"
             android:ems="10"
-            android:hint="Apellidos"
+            android:autofillHints="personFamilyName"
+            android:hint="@string/apellidos"
+            android:textColor="@android:color/black"
+            android:textColorHint="#616161"
             android:inputType="textPersonName" />
 
         <Button
@@ -36,11 +45,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/input_apellido"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="-7dp"
-            android:layout_marginTop="117dp"
-            android:layout_marginEnd="-7dp"
-            android:text="Salir"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp"
+            android:text="@string/salir"
             android:textAllCaps="false" />
 
     </RelativeLayout>
