@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Guia6">
         <activity
+            android:name=".ConstraintLayout"
+            android:exported="false" />
+        <activity
             android:name=".TableLayout"
             android:exported="false" />
         <activity

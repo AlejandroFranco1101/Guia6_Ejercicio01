@@ -3,4 +3,8 @@
     <string name="nombres">Nombres</string>
     <string name="apellidos">Apellidos</string>
     <string name="salir">Salir</string>
+    <string name="imagen_avatar">Imagen de avatar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
 </resources>

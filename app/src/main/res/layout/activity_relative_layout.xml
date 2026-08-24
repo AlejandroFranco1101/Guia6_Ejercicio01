@@ -9,35 +9,37 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="16dp">
+        android:paddingHorizontal="16dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="88dp">
 
         <EditText
             android:id="@+id/input_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:ems="10"
             android:autofillHints="personName"
+            android:ems="10"
             android:hint="@string/nombres"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
             android:textColor="@android:color/black"
-            android:textColorHint="#616161"
-            android:inputType="textPersonName" />
+            android:textColorHint="#616161" />
 
         <EditText
             android:id="@+id/input_apellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:layout_below="@+id/input_nombre"
             android:layout_alignParentStart="true"
-            android:ems="10"
             android:autofillHints="personFamilyName"
+            android:ems="10"
             android:hint="@string/apellidos"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
             android:textColor="@android:color/black"
-            android:textColorHint="#616161"
-            android:inputType="textPersonName" />
+            android:textColorHint="#616161" />
 
         <Button
             android:id="@+id/btnSalir"
