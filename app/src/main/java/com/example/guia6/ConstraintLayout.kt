@@ -30,5 +30,8 @@ class ConstraintLayout : AppCompatActivity() {
                 else -> Toast.makeText(this, R.string.sesion_iniciada, Toast.LENGTH_SHORT).show()
             }
         }
+        findViewById<android.view.View>(R.id.btnSalirConstraint).setOnClickListener {
+            finish()
+        }
     }
 }

@@ -78,9 +78,21 @@
         android:layout_height="60dp"
         android:text="@string/iniciar_sesion"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/BottomGuideLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalirConstraint"
         app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
         app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
         app:layout_constraintTop_toBottomOf="@+id/TxtPassword" />
+
+    <Button
+        android:id="@+id/btnSalirConstraint"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/salir"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/BottomGuideLine"
+        app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

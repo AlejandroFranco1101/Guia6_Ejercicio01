@@ -48,5 +48,8 @@ class RegistroActivity : AppCompatActivity() {
                 else -> Toast.makeText(this, R.string.registro_exitoso, Toast.LENGTH_SHORT).show()
             }
         }
+        findViewById<android.view.View>(R.id.btnSalirRegistro).setOnClickListener {
+            finish()
+        }
     }
 }

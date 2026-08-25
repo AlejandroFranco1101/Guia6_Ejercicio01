@@ -17,5 +17,9 @@ class GridLayout : AppCompatActivity() {
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<android.view.View>(R.id.btnSalirGrid).setOnClickListener {
+            finish()
+        }
     }
 }
